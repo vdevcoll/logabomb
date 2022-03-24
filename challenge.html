@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGABOMB</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/style_a.css">
+    <link rel="stylesheet" href="/css/style_b.css">
+</head>
+<body onload="startup(), verification()">
+    <div class="bomb-wrapper">
+        <div id="bomb-display">
+            <div class="container-counter">
+                <label id="counter">
+                    <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="flex-child circuit_a">
+            <div id="container">
+                <div class="circuit">
+                    <img class="base" src="/img/circuit_a/base.svg" alt="">
+                    <img class="gates" src="/img/circuit_a/gates.svg" alt="">
+                    <div class="connector-container">
+                        <object type="image/svg+xml" data="/img/circuit_a/lines/connector01.svg" class="connector" id="connector01"></object>
+                        <object type="image/svg+xml" data="/img/circuit_a/lines/connector02.svg" class="connector" id="connector02"></object>
+                        <object type="image/svg+xml" data="/img/circuit_a/lines/connector03.svg" class="connector" id="connector03"></object>
+                        <object type="image/svg+xml" data="/img/circuit_a/lines/connector04.svg" class="connector" id="connector04"></object>
+                        <object type="image/svg+xml" data="/img/circuit_a/lines/connector05.svg" class="connector" id="connector05"></object>
+                        <object type="image/svg+xml" data="/img/circuit_a/lines/connector06.svg" class="connector" id="connector06"></object>
+                        <object type="image/svg+xml" data="/img/circuit_a/lines/connector07.svg" class="connector" id="connector07"></object>
+                        <object type="image/svg+xml" data="/img/circuit_a/lines/connector08.svg" class="connector" id="connector08"></object>
+                        <object type="image/svg+xml" data="/img/circuit_a/lines/connector09.svg" class="connector" id="connector09"></object>
+                        <object type="image/svg+xml" data="/img/circuit_a/lines/connector10.svg" class="connector" id="connector10"></object>
+                        <object type="image/svg+xml" data="/img/circuit_a/lines/connector11.svg" class="connector" id="connector11"></object>
+                        <object type="image/svg+xml" data="/img/circuit_a/lines/connector12.svg" class="connector" id="connector12"></object>
+                        <object type="image/svg+xml" data="/img/circuit_a/lines/connector13.svg" class="connector" id="connector13"></object>
+                    </div>
+                    <div class="buttons">
+                        <button class="btn-value" id="btn-a">0</button>
+                        <button class="btn-value" id="btn-b">0</button>
+                        <button class="btn-value" id="btn-c">0</button>
+                        <button class="btn-value" id="btn-d">0</button>
+                    </div>
+                    <div class="display">
+                        <label id="status">---</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="flex-child circuit_b">
+            <div id="container">
+                <div class="circuit">
+                    <img class="base" src="/img/circuit_b/base.svg" alt="">
+                    <img class="gates" src="/img/circuit_b/gates.svg" alt="">
+                    <div class="connector-container">
+                        <object type="image/svg+xml" data="/img/circuit_b/Placar.svg" class="placar" id="placar"></object> 
+                        <object type="image/svg+xml" data="/img/circuit_b/lines/connector01.svg" class="connector" id="connector01"></object>
+                        <object type="image/svg+xml" data="/img/circuit_b/lines/connector02.svg" class="connector" id="connector02"></object>
+                        <object type="image/svg+xml" data="/img/circuit_b/lines/connector03.svg" class="connector" id="connector03"></object>
+                        <object type="image/svg+xml" data="/img/circuit_b/lines/connector04.svg" class="connector" id="connector04"></object>
+                        <object type="image/svg+xml" data="/img/circuit_b/lines/connector05.svg" class="connector" id="connector05"></object>
+                        <object type="image/svg+xml" data="/img/circuit_b/lines/connector06.svg" class="connector" id="connector06"></object>
+                        <object type="image/svg+xml" data="/img/circuit_b/lines/connector07.svg" class="connector" id="connector07"></object>
+                        <object type="image/svg+xml" data="/img/circuit_b/lines/connector08.svg" class="connector" id="connector08"></object>
+                        <object type="image/svg+xml" data="/img/circuit_b/lines/connector09.svg" class="connector" id="connector09"></object>
+                        <object type="image/svg+xml" data="/img/circuit_b/lines/connector10.svg" class="connector" id="connector10"></object>
+                        <object type="image/svg+xml" data="/img/circuit_b/lines/connector11.svg" class="connector" id="connector11"></object>
+                        <object type="image/svg+xml" data="/img/circuit_b/lines/connector12.svg" class="connector" id="connector12"></object>
+                        <object type="image/svg+xml" data="/img/circuit_b/lines/connector13.svg" class="connector" id="connector13"></object>
+                        <object type="image/svg+xml" data="/img/circuit_b/lines/connector14.svg" class="connector" id="connector14"></object>
+                        <object type="image/svg+xml" data="/img/circuit_b/lines/connector15.svg" class="connector" id="connector15"></object>
+                        <object type="image/svg+xml" data="/img/circuit_b/lines/connector16.svg" class="connector" id="connector16"></object>
+                        <object type="image/svg+xml" data="/img/circuit_b/lines/connector17.svg" class="connector" id="connector17"></object>
+                        <object type="image/svg+xml" data="/img/circuit_b/lines/connector18.svg" class="connector" id="connector18"></object>
+                        <object type="image/svg+xml" data="/img/circuit_b/lines/connector19.svg" class="connector" id="connector19"></object>
+                    </div>
+                    <div class="buttons">
+                        <button class="btn-value" id="btn-a">0</button>
+                        <button class="btn-value" id="btn-b">0</button>
+                        <button class="btn-value" id="btn-c">0</button>
+                        <button class="btn-value" id="btn-d">0</button>
+                        <button class="btn-value" id="btn-e">0</button>
+                        <button class="btn-value" id="btn-f">0</button>
+                        <button class="btn-value" id="btn-g">0</button>
+                        <button class="btn-value" id="btn-h">0</button>
+                    </div>
+                    <div class="display">
+                        <label id="status">-----</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="info-popup" class="active">
+        <div class="info-content">
+            <h2 id="start-counter"></h2>
+        </div>
+    </div>
+    <script src="/js/app.js"></script>
+</body>
+</html>

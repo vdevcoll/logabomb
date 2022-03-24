@@ -1,0 +1,133 @@
+.circuit_a #container {
+    margin: 15px auto;
+    max-width: 300px;
+    padding: 20px;
+}
+
+.circuit_a .circuit {
+    position: relative;
+}
+
+.circuit_a .base {
+    width: 100%;
+    opacity: 0.0;
+}
+
+.circuit_a .gates {
+    position: absolute;
+    top: 0;
+    left: 18px;
+    width: 236px;
+    filter: invert(100%) sepia(0%) saturate(7472%) hue-rotate(326deg) brightness(112%) contrast(108%);
+    z-index: 9;
+}
+
+.circuit_a .connector {
+    position: absolute;
+    filter: invert(100%) sepia(0%) saturate(7472%) hue-rotate(326deg) brightness(112%) contrast(108%);
+    z-index: 8;
+}
+
+.circuit_a #connector01 {
+    top: 49px;
+    right: 24px;
+    width: 75px;
+}
+.circuit_a #connector02 {
+    top: 45px;
+    right: 126.6px;
+    height: 103px;
+}
+.circuit_a #connector03 {
+    top: 49px;
+    right: 156px;
+    width: 68px;
+}
+.circuit_a #connector04 {
+    top: 187px;
+    right: 118px;
+    width: 11px;
+}
+.circuit_a #connector05 {
+    top: 300px;
+    right: 0px;
+    width: 56.7px;
+}
+.circuit_a #connector06 {
+    top: 297.2px;
+    right: 34px;
+    width: 77px;
+}
+.circuit_a #connector07 {
+    top: 297.4px;
+    right: 60px;
+    width: 143px;
+}
+.circuit_a #connector08 {
+    top: 295px;
+    right: 198px;
+    height: 425px;
+}
+.circuit_a #connector09 {
+    top: 295px;
+    right: 209px;
+    height: 87px;
+}
+.circuit_a #connector10 {
+    top: 425px;
+    right: 206px;
+    height: 80px;
+}
+.circuit_a #connector11 {
+    top: 554px;
+    right: 138.5px;
+    height: 165.4px;
+}
+.circuit_a #connector12 {
+    top: 554px;
+    right: 63px;
+    height: 165.4px;
+}
+.circuit_a #connector13 {
+    top: 559.1px;
+    right: 43.5px;
+    height: 160px;
+}
+
+.circuit_a .btn-value {
+    position: absolute;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 0 9px 0 9px;
+    border: solid 2.5px white;
+    background-color: rgb(72, 72, 75);
+    bottom: 4px;
+    cursor: pointer;
+}
+.circuit_a .btn-value:hover{
+    background: rgb(173, 173, 173);
+}
+.circuit_a #btn-a {
+    left: 41px;
+}
+.circuit_a #btn-b {
+    left: 88px;
+}
+.circuit_a #btn-c {
+    left: 134px;
+}
+.circuit_a #btn-d {
+    left: 183px;
+}
+
+.circuit_a .display {
+    position: absolute;
+    top: 17px;
+    left: 92px;
+    padding: 2.2px 32px 2.2px 31px;
+    background-color: rgb(124, 134, 125);
+}
+
+.circuit_a .teste {
+    filter: invert(68%) sepia(79%) saturate(3552%) hue-rotate(81deg) brightness(112%) contrast(102%);
+}

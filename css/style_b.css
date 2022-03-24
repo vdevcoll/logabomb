@@ -1,0 +1,215 @@
+.circuit_b #container {
+    margin: 15px auto;
+    width: 500px;
+    padding: 20px;
+}
+
+.circuit_b .circuit {
+    position: relative;
+}
+
+.circuit_b .base {
+    width: 100%;
+    opacity: 0.0;
+}
+
+.circuit_b .gates {
+    position: absolute;
+    top: 260px;
+    left: 50px;
+    width: 338px;
+    z-index: 9999;
+    
+} 
+.circuit_b .placar{
+    position: absolute;
+    top: 0px;
+    right: 192px;
+    width: 95px;
+    z-index: 99999;
+}
+
+.circuit_b .connector {
+    position: absolute;
+    z-index: -1;
+    filter: invert(100%) sepia(0%) saturate(7472%) hue-rotate(326deg) brightness(112%) contrast(108%);
+}
+
+.circuit_b #connector01 {
+    top: 50px;
+    left: 91px;
+    width: 105px;
+}
+.circuit_b #connector02 {
+    top: 49px;
+    right: 238px;
+    height: 248px;
+}
+.circuit_b #connector03 {
+    top: 50px;
+    right: 89px;
+    width: 126px;
+}
+.circuit_b #connector04 {
+    top: 298px;
+    left: 67px;
+    width: 18px;
+}
+.circuit_b #connector05 {
+    top: 298px;
+    left: 102px;
+    width: 20px;
+}
+.circuit_b #connector06 {
+    top: 298px;
+    left: 174px;
+    width: 40px;
+}
+.circuit_b #connector07 {
+    top: 298px;
+    right: 191px;
+    width: 41px;
+}
+.circuit_b #connector08 {
+    top: 298px;
+    right: 98px;
+    height: 97px;
+}
+.circuit_b #connector09 {
+    top: 298px;
+    right: 58px;
+    height: 425px;
+}
+.circuit_b #connector10 {
+    top: 410px;
+    left: 58px;
+    height: 307px;
+}
+.circuit_b #connector11 {
+    top: 430px;
+    left: 77px;
+    height: 300px;
+}
+.circuit_b #connector12 {
+    top: 430px;
+    left: 106px;
+    height: 140px;
+}
+.circuit_b #connector13 {
+    top: 430px;
+    left: 130px;
+    height: 133px;
+}
+.circuit_b #connector14 {
+    top: 430px;
+    left: 152px;
+    height: 300px;
+}
+.circuit_b #connector15 {
+    top: 430px;
+    right: 260px;
+    height: 300px;
+}
+.circuit_b #connector16 {
+    top: 430px;
+    right: 200px;
+    height: 300px;
+}
+.circuit_b #connector17 {
+    top: 430px;
+    right: 168px;
+    height: 300px;
+}
+.circuit_b #connector18 {
+    top: 429px;
+    right: 105px;
+    height: 300px;
+}
+.circuit_b #connector19 {
+    top: 430px;
+    right: 76px;
+    height: 130px;
+}
+
+.circuit_b .btn-value {
+    position: center;
+    font-size: 30px;
+    font-weight: 600;
+    border: solid 2.5px white;
+    background-color: rgb(72, 72, 75);
+    bottom: 4px;
+    cursor: pointer;
+    z-index: 9999;
+}
+.circuit_b .btn-value:hover{
+    background: rgb(173, 173, 173);
+}
+.circuit_b #btn-a {
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    top: 719px;
+    left: 40px;
+}
+
+.circuit_b #btn-b {
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    top: 719px;
+    left: 88px; 
+}
+.circuit_b #btn-c {
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    top: 719px;
+    left: 134px;
+}
+.circuit_b #btn-d {
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    top: 719px;
+    left: 181px;
+}
+.circuit_b #btn-e {
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    top: 719px;
+    left: 227px;
+}
+.circuit_b #btn-f {
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    top: 719px;
+    left: 274px;
+}
+.circuit_b #btn-g {
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    top: 719px;
+    left: 320px;
+}
+.circuit_b #btn-h {
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    top: 719px;
+    left: 366px;
+}
+
+.circuit_b .display {
+    position: absolute;
+    top: 19px;
+    left: 180px;
+    padding: 2.2px 28px 2.2px 31px;
+    background-color: rgb(124, 134, 125);
+}
+
+.circuit_b .cb_teste {
+    filter: invert(68%) sepia(79%) saturate(3552%) hue-rotate(81deg) brightness(112%) contrast(102%);
+}

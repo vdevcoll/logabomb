@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    overflow: hidden auto;
+}
+
+@font-face {
+    font-family: "lcd";
+    src: url("/font/Segment7-4Gml.otf");
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    visibility: hidden;
+}
+
+.bomb-wrapper {
+    background-image: url("/img/bomb.svg");
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    background-position: center;
+    margin: auto;
+    padding: 150px;
+    min-width: 500px;
+    width: calc(100% - 17px);
+
+    visibility: hidden;
+}
+
+.container-counter{
+    width: 100%;
+    position: relative;
+}
+#bomb-display {
+    text-align: center;
+    font-family: "lcd";
+    padding: 9px 10px 3px 10px;
+    font-size: 40px;
+    color: rgb(255, 0, 0);
+    background: rgb(54, 48, 48);
+    position: absolute;
+    top: 56px;
+    left: 0;
+    right: 31px; 
+    margin-left: auto; 
+    margin-right: auto;
+    width: 210px;
+}
+
+#info-popup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+    background: rgb(0, 0, 0);
+    color: rgb(255, 0, 0);;
+    text-align: center;
+    visibility: visible;
+}
+
+#info-popup h2{
+    font-size: 200px;
+    font-family: lcd;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .bomb-wrapper {
+        background-image: none;
+        padding: 70px;
+        width: 100vw;
+    }
+    #bomb-display {
+        text-align: center;
+        font-family: "lcd";
+        padding: 9px 10px 3px 10px;
+        font-size: 40px;
+        color: rgb(255, 0, 0);
+        background: rgb(54, 48, 48);
+        position: absolute;
+        top: 56px;
+        left: 0;
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto;
+        width: 500px;
+    }
+}

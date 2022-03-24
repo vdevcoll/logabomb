@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background: #000000;
+    color: #fff;
+    line-height: 1.8;
+}
+
+.container {
+    margin: 30px auto;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.box {
+    background: rgb(0, 0, 0);
+    border: solid 1px #11ed25;
+    border-radius: 5px;
+    padding: 15px 25px;
+    color: rgb(255, 255, 255);
+}
+
+.information {
+    display: flex;
+    margin: 5px 0;
+    align-items: center;
+    font-size: 16px;
+}
+
+.tags {
+    background: #333;
+    border-radius: 5px;
+    padding: 1px 7px 2px 7px;
+}
+
+.material-icons {
+    width: 25px;
+    margin-right: 10px;
+    color: #11ed25;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 16px;
+    background: transparent;
+    color: white;
+    border: solid 1px white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    color: #11ed25;
+    border: solid 1px #11ed25;
+}
