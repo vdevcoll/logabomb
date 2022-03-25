@@ -1,9 +1,14 @@
 // GENERAL
 const circuits = document.querySelector('.main-container'),
-      bomb = document.querySelector('.bomb-wrapper');
+      bomb = document.querySelector('.bomb-wrapper'),
+      popup = document.querySelector('#info-popup'),
+      buttons_popup = document.querySelector('.buttons-popup'),
+      id_counter = document.getElementById("start-counter");
 
-let mins = 1;
+let mins = 2;
 let secs = mins * 60;
+
+let btn_time = 10;
 
 // CIRCUIT A
 const btn_a = document.querySelector('.circuit_a #btn-a'),
@@ -360,9 +365,11 @@ btn_a.addEventListener("click" , () =>{
     if (btn_a.innerHTML == 0) {
         btn_a.innerHTML = 1;
         connector_b1.classList.add("teste");
+        secs = secs - btn_time;
     } else {
         btn_a.innerHTML = 0;
         connector_b1.classList.remove("teste");
+        secs = secs - btn_time;
     }
     verification()
 })
@@ -371,9 +378,11 @@ btn_b.addEventListener("click" , () =>{
     if (btn_b.innerHTML == 0) {
         btn_b.innerHTML = 1;
         connector_b2.classList.add("teste");
+        secs = secs - btn_time;
     } else {
         btn_b.innerHTML = 0;
         connector_b2.classList.remove("teste");
+        secs = secs - btn_time;
     }
     verification()
 })
@@ -382,9 +391,11 @@ btn_c.addEventListener("click" , () =>{
     if (btn_c.innerHTML == 0) {
         btn_c.innerHTML = 1;
         connector_b3.classList.add("teste");
+        secs = secs - btn_time;
     } else {
         btn_c.innerHTML = 0;
         connector_b3.classList.remove("teste");
+        secs = secs - btn_time;
     }
     verification()
 })
@@ -393,9 +404,11 @@ btn_d.addEventListener("click" , () =>{
     if (btn_d.innerHTML == 0) {
         btn_d.innerHTML = 1;
         connector_b4.classList.add("teste");
+        secs = secs - btn_time;
     } else {
         btn_d.innerHTML = 0;
         connector_b4.classList.remove("teste");
+        secs = secs - btn_time;
     }
     verification()
 })
@@ -404,9 +417,11 @@ cb_btn_a.addEventListener("click" , () =>{
     if (cb_btn_a.innerHTML == 0) {
         cb_btn_a.innerHTML = 1;
         cb_connector_b1.classList.add("cb_teste");
+        secs = secs - btn_time;
     } else {
         cb_btn_a.innerHTML = 0;
         cb_connector_b1.classList.remove("cb_teste");
+        secs = secs - btn_time;
     }
     verification()
 })
@@ -416,11 +431,13 @@ cb_btn_b.addEventListener("click" , () =>{
         cb_btn_b.innerHTML = 1;
         cb_connector_b2.classList.add("cb_teste");
         cb_connector_b22.classList.add("cb_teste");
+        secs = secs - btn_time;
 
     } else {
         cb_btn_b.innerHTML = 0;
         cb_connector_b2.classList.remove("cb_teste");
         cb_connector_b22.classList.remove("cb_teste");
+        secs = secs - btn_time;
     }
     verification()
 })
@@ -430,10 +447,12 @@ cb_btn_c.addEventListener("click" , () =>{
         cb_btn_c.innerHTML = 1;
         cb_connector_b3.classList.add("cb_teste");
         cb_connector_b33.classList.add("cb_teste");
+        secs = secs - btn_time;
     } else {
         cb_btn_c.innerHTML = 0;
         cb_connector_b3.classList.remove("cb_teste");
         cb_connector_b33.classList.remove("cb_teste");
+        secs = secs - btn_time;
     }
     verification()
 })
@@ -442,9 +461,11 @@ cb_btn_d.addEventListener("click" , () =>{
     if (cb_btn_d.innerHTML == 0) {
         cb_btn_d.innerHTML = 1;
         cb_connector_b4.classList.add("cb_teste");
+        secs = secs - btn_time;
     } else {
         cb_btn_d.innerHTML = 0;
         cb_connector_b4.classList.remove("cb_teste");
+        secs = secs - btn_time;
     }
     verification()
 })
@@ -453,9 +474,11 @@ cb_btn_e.addEventListener("click" , () =>{
     if (cb_btn_e.innerHTML == 0) {
         cb_btn_e.innerHTML = 1;
         cb_connector_b5.classList.add("cb_teste");
+        secs = secs - btn_time;
     } else {
         cb_btn_e.innerHTML = 0;
         cb_connector_b5.classList.remove("cb_teste");
+        secs = secs - btn_time;
     }
     verification()
 })
@@ -464,9 +487,11 @@ cb_btn_f.addEventListener("click" , () =>{
     if (cb_btn_f.innerHTML == 0) {
         cb_btn_f.innerHTML = 1;
         cb_connector_b6.classList.add("cb_teste");
+        secs = secs - btn_time;
     } else {
         cb_btn_f.innerHTML = 0;
         cb_connector_b6.classList.remove("cb_teste");
+        secs = secs - btn_time;
     }
     verification()
 })
@@ -475,9 +500,11 @@ cb_btn_g.addEventListener("click" , () =>{
     if (cb_btn_g.innerHTML == 0) {
         cb_btn_g.innerHTML = 1;
         cb_connector_b7.classList.add("cb_teste");
+        secs = secs - btn_time;
     } else {
         cb_btn_g.innerHTML = 0;
         cb_connector_b7.classList.remove("cb_teste")
+        secs = secs - btn_time;
     }
     verification()
 })
@@ -487,10 +514,12 @@ cb_btn_h.addEventListener("click" , () => {
         cb_btn_h.innerHTML = 1
         cb_connector_b8.classList.add("cb_teste")
         cb_connector_b88.classList.add("cb_teste")
+        secs = secs - btn_time;
     } else {
         cb_btn_h.innerHTML = 0;
         cb_connector_b8.classList.remove("cb_teste")
         cb_connector_b88.classList.remove("cb_teste")
+        secs = secs - btn_time;
     }
     verification()
 })
@@ -502,12 +531,10 @@ function startup(){
         counter--;
     
         if(counter >= 0){
-            id = document.getElementById("start-counter");
-            id.innerHTML = counter;
+            id_counter.innerHTML = counter;
         }
     
         if(counter == 0){
-            popup = document.querySelector('#info-popup');
             popup.style.visibility = "hidden";
             circuits.style.visibility = "visible";
             bomb.style.visibility = "visible";
@@ -536,7 +563,8 @@ function Decrement() {
         }
 
         if (mins < 0) {
-            alert('A bomba Explodiu!');
+            // alert('A bomba Explodiu!');
+            bomb_lose()
             minutes.innerHTML = "00";
             seconds.innerHTML = "00";
         }
@@ -561,6 +589,54 @@ function getseconds() {
 function stopCountdown(){
     if (display.innerHTML == "OK" && cb_display.innerHTML == "OK"){
         clearTimeout(myTimeout);
-        alert("Você desarmou a Bomba!")
+        // alert("Você desarmou a Bomba!")
+        bomb_win()
     }
+}
+
+// ===================== RESULT
+function bomb_win(){
+    scroll(0,0)
+
+    const svgContainer = document.querySelector('.svg');
+    const animItem = bodymovin.loadAnimation({
+        wrapper: svgContainer,
+        animType: 'svg',
+        loop: true,
+        autoplay: false,
+        path: 'https://assets8.lottiefiles.com/packages/lf20_5hufvwkz.json'
+    });
+    animItem.goToAndPlay(0,true);
+
+    id_counter.style.fontSize = '35px';
+    id_counter.style.fontFamily = 'sans-serif'
+    id_counter.style.color = '#11ed25'
+    id_counter.innerHTML = "PARABÉNS!"
+    buttons_popup.style.display = "block";
+    popup.style.visibility = "visible";
+}
+function bomb_lose(){
+    scroll(0,0)
+
+    const svgContainer = document.querySelector('.svg');
+    const animItem = bodymovin.loadAnimation({
+        wrapper: svgContainer,
+        animType: 'svg',
+        loop: 3,
+        autoplay: false,
+        speed: 0.5,
+        path: 'https://assets1.lottiefiles.com/packages/lf20_criPwK.json'
+    });
+    animItem.goToAndPlay(0,true);
+
+    id_counter.style.fontSize = '35px';
+    id_counter.style.fontFamily = 'sans-serif'
+    id_counter.innerHTML = "EXPLODIU!"
+    buttons_popup.style.display = "block";
+    popup.style.visibility = "visible";
+}
+
+// ===================== RELOAD PAGE
+function reload_page(){
+    document.location.reload()
 }
